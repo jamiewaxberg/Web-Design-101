@@ -1,0 +1,127 @@
+// Typography
+$sans-serif:        			'Open sans', Arial, sans-serif;
+$serif: 	        			Georgia, "Times New Roman", Times, serif;
+$base-font-family: 				$sans-serif;
+$accent-font-family: 			$sans-serif;
+$heading-font-family:			"Roboto", Arial, sans-serif;
+$ie-font-family:				Tahoma, Geneva, sans-serif;
+$icon-font-family: 				'cleverFont';
+$code-font-family:				Consolas, Lucida Console, Courier New, monospace, sans-serif;
+
+// Font Sizes
+$base-font-size: 				14px;
+
+$large-font-size:				$base-font-size * 1.4; // 19.6px
+$medium-font-size:				$base-font-size * 1.2; // 16.8px
+$small-font-size:         		$base-font-size * 0.95; // 12.6px
+$mini-font-size:          		$base-font-size * 0.9; // 11.7px
+$icon-font-size:				8px;
+
+$h1-font-size: 					$base-font-size * 2.5;
+$h2-font-size: 					$base-font-size * 2;
+$h3-font-size: 					$base-font-size * 1.29;
+$h4-font-size: 					$base-font-size * 1.2;
+$h5-font-size: 					$base-font-size * 1.5;
+$h6-font-size: 					$base-font-size * 1.3;
+
+// Line height
+$base-line-height: 				100%;
+
+// Colors
+$blue: 							#8BA1E0;
+$blue-light:					#9ED9E6;
+$blue-dark:						#35889d;
+$green:                 		#17ab41;
+$red:                   		#e4342b;
+$red-light:						#EA9783;
+$yellow:                		#ECEC93;
+$orange:                		#EFB55E;
+$pink:                 	 		#c3325f;
+$purple:                		#33385d;
+$navy:                  		#35414d;
+$teal:							#37b9ac;
+
+// Grays
+$gray:                 			#666;
+$gray-dark: 					#444;
+$gray-medium: 					#B7B7B7;
+$gray-light: 					#ABABAB;
+$gray-lighter:          		#e0e0e0;
+$gray-lightest:         		#f2f2f2;
+$black:                	 		#000;
+$white:                 		#fff;
+$off-white:						#f7f7f7;
+
+// Main Colors
+$primary-color:					$teal;
+$accent-color:					$orange;
+
+// Background Colors
+$base-bg-color: 				$off-white;
+$header-bg-color: 				$white;
+$footer-bg-color: 				$gray-dark;
+$wrapper-bg-color: 				$white;
+$popup-bg-color: 				$white;			// use for any background of something that is overlaid on page (popups, modals, tooltips)
+
+// Font Colors
+$base-font-color: 				$black;
+$light-font-color: 				$white;
+$medium-font-color: 			$gray-light;
+$heading-font-color: 			$gray-dark;
+$footer-font-color: 			$white;
+
+// Link Colors
+$base-link-color: 				$primary-color;
+$base-link-color-hover: 		$accent-color;
+$footer-link-color:				$white;
+$footer-link-color-hover:		$white;
+
+// Button Colors
+$major-btn-color: 				$blue-dark;
+$major-btn-color-hover:			darken($major-btn-color, 10);
+$major-btn-border-color: 		$major-btn-color;
+
+$minor-btn-color: 				$accent-color;
+$minor-btn-color-hover: 		darken($minor-btn-color, 5);
+$minor-btn-border-color:		$minor-btn-color;
+
+$submit-btn-color: 				$green;
+$submit-btn-color-hover:		darken($submit-btn-color, 10);
+$submit-btn-border-color: 		$submit-btn-color;
+
+$add-btn-color: 		 		$minor-btn-color;
+$add-btn-color-hover: 	 		$minor-btn-color-hover;
+$add-btn-border-color: 	 		$minor-btn-border-color;
+
+$delete-btn-color: 		 		$red;
+$delete-btn-color-hover: 	 	darken($delete-btn-color, 10);
+$delete-btn-border-color: 	 	$delete-btn-color;
+
+// Error
+$error-color: 					$red;
+$error-border-color:       		darken(adjust-hue($error-color, -10), 3%);
+
+// Success
+$success-color: 				$green;
+
+// Border
+$base-border-color: 			$gray-lighter;
+$base-border: 					1px solid $base-border-color;
+$base-border-radius: 			5px;
+
+// Layout
+$header-height:					49px;
+
+// Margins & Paddings
+$block-margin:					20px 10px;
+$block-margin-only-vertical:	10px 0;
+$block-padding:					25px;
+$block-padding-small:			5px 10px;
+$inner-block-padding:			20px;
+$column-margin-bottom:			20px;
+
+//Media query breakpoints
+$mobile: new-breakpoint(max-width 480px); 
+$tablet: new-breakpoint(max-width 768px); 
+$desktop: new-breakpoint(min-width 769px);
+$mobile-devices: new-breakpoint(max-device-width 769px);

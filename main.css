@@ -1,0 +1,102 @@
+.headline {
+  width:auto; 
+  position:relative; 
+  float:left;
+}
+
+.cblogo {
+  width:auto; 
+  position:relative; 
+  float:right; 
+  margin-bottom:8px;
+}
+
+.div-left {
+  float: left; margin-left: 15px; position: relative; clear: both;
+}
+
+ul>li, a{
+  cursor: pointer;
+}
+
+pre, code {
+  overflow:auto; 
+  width: 100%;
+}
+
+pre code {
+  white-space: pre !important;
+}
+
+.left {
+  float:left;
+}
+
+.showCursor {
+  cursor:help;
+}
+
+.space40top {
+  margin-top:40px;
+}
+
+.widthfullsize {
+  margin-top:0px; 
+  width:100%;
+}
+
+.left40 {
+  position:relative; 
+  float:left; 
+  width: 40%;
+}
+
+.left60 {
+  position:relative; 
+  float:left; 
+  width: 60%; 
+  height: auto;
+}
+
+.additionalInfo {
+  position:relative; 
+  float:left; 
+  width: 100%; 
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.additionalInfo p {
+  margin:0px;
+}
+
+.underline {
+  text-decoration:underline;
+}
+
+.additionalvalue {
+  padding-right: 50px;
+  position:relative;
+  float:left;
+}
+
+.labels {
+  position: relative; 
+  float: left; 
+  width: 250px; 
+  font-style:normal;
+}
+
+.footerdiv {
+  position:relative; 
+  margin-top:20px;
+}
+
+.footersize {
+  font-size:10px;
+}
+
+/* Page stlyes */
+a {
+  color: red;
+}

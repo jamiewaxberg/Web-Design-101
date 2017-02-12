@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Design 101</title>
+  <link rel="stylesheet" href="./stylesheets/app.css">
+  <link rel="icon" type="image/png" href="assets/favicon.ico">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Web Design 101</h1>
+      <div id="nav">
+        <ul class="tabs">
+          <li class="day"><a href="#one">Day 1<span>(9/1)</span></a></li>
+          <li class="day"><a href="#two">Day 2<span>(9/3)</span></a></li>
+          <li class="day"><a href="#three">Day 3<span>(9/8)</span></a></li>
+          <li class="day"><a href="#four">Day 4<span>(9/10)</span></a></li>
+          <li class="day"><a href="#five">Day 5<span>(9/15)</span></a></li>
+          <li class="day"><a href="#six">Day 6<span>(9/17)</span></a></li>
+          <li class="day"><a href="#seven">Day 7<span>(9/22)</span></a></li>
+          <li class="day"><a href="#eight">Day 8<span>(9/24)</span></a></li>
+          <li class="day"><a href="#nine">Day 9<span>(9/29)</span></a></li>
+          <li class="day"><a href="#ten">Day 10<span>(10/1)</span></a></li>
+          <li class="day"><a href="#eleven">Day 11<span>(10/6)</span></a></li>
+          <li class="day"><a href="#twelve">Day 12<span>(10/8)</span></a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="content">
+      <div class="blockWrapper">
+        <div class="day" id="one">
+          <div class="block">
+            <div class="blockHeader">
+              <h2>What are websites?</h2>
+              <h3>Intro, Ch. 1-4</h3>
+            </div>
+            <div class="col1">
+              <p class="subHeader">Basics of a site</p>
+              <span class="topic">A website is a folder of files</span>
+              <ul class="notes">
+                <li>An HTML file = a web page</li>
+                <li>A folder of HTML files = a multi-page website</li>
+                <li>Folder structure = site structure</li>
+                <span>Hierarchy of files</span>
+                <span>Home page vs. sub-pages, article pages, etc.</span>
+                <li>We will be using <a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a> for code documents</li>
+              </ul>
+              <span class="topic">HTML creates content</span>
+              <ul class="notes">
+                <li>HTML = Hypertext Markup Language</li>
+                <li>Bare-bones default style without CSS</li>
+                <li>Structure of a basic HTML page:</li>
+                <span>HTML5 doctype tag</span>
+                <span>Head and body tags</span>
+                <span>Meta tags</span>
+                <li>HTML5 is the latest edition of HTML</li>
+                <span>First public working draft released in 2008</span>
+                <span>Finalized and standardized in October 2014</span>
+              </ul>
+              <span class="topic">CSS creates visual styling</span>
+              <ul class="notes">
+                <li>CSS = Cascading Style Sheets</li>
+                <li>Defines properties like font, type size, colors</li>
+                <li>Positions elements on page</li>
+                <li>CSS3 is the 3rd level of the language, still under development</li>
+                <span>Has more modern properties that are not backwards-compatable in older browsers (generally IE8 and older)</span>
+              </ul>
+              <p class="subHeader">Intro to tags</p>
+              <span class="topic">Tags wrap the content</span>
+                <ul class="notes">
+                  <li>Tag structure</li>
+                  <span>Opening and closing tags vs. self-closing tags</span>
+                  <span>Attributes define properties of the tag</span>
+                  <li>Content goes between opening and closing tags</li>
+                </ul>
+                <span class="topic">Syntax is the "grammar" of the coding language</span>
+                <ul class="notes">
+                  <li>Every coding language has different syntax</li>
+                  <li>Certain tags apply a default style to the content inside of them </li>
+                  <span>Ex.: heading tags (<span class="codeLine">&lt;h1&gt;, &lt;h2&gt; ... &lt;h6&gt;</span>), font-style tags (<span class="codeLine">&lt;b&gt;, &lt;strong&gt;, &lt;i&gt;</span>), links (<span class="codeLine">&lt;a&gt;</span>)  </span> 
+                  <li>Certain tags have attributes</li>
+                  <li>HTML tags can "nest" to achieve desired markup structure</li>
+                </ul>
+                <span class="topic">Text</span>
+                <ul class="notes">
+                  <li>Paragraph tags (<span class="codeLine">&lt;p&gt;</span>), bold tags (<span class="codeLine">&lt;b&gt;</span>), and span tags (&lt;span&gt;</span>) are most common for putting body text onto a web page</li>
+                  <li>Heading tags (<span class="codeLine">&lt;h1&gt;, &lt;h2&gt; ... &lt;h6&gt;</span>) are used for headings with respective importance</li>
+                </ul>
+                <span class="topic">Lists</span>
+                <ul class="notes">
+                  <li>Ordered lists (<span class="codeLine">&lt;ol&gt;</span>) and unordered lists (<span class="codeLine">&lt;ul&gt;</span>) with list items (<span class="codeLine">&lt;li&gt;</span>) nested inside</li>
+                </ul>
+                <span class="topic">Links</span>
+                <ul class="notes">
+                  <li>Anchor tag with href attribute (defines link destination)</li>
+                  <span class="codeLine">&lt;a href="url here"&gt;link&lt;/a&gt;</span>
+                  <li>Relative vs. absolute paths</li>
+                  <span>Relative paths point at another file in your project folder, in respect to where the HTML file is</span>
+                  <span>Absolute paths point at the full path of something, regardless of where you're starting from</span>
+                </ul>
+              </div>
+              <div class="col2">
+                <div class="image">
+                  <img src="assets/files_folders_structure.jpg">
+                </div>
+                <div class="codeBlock">
+                  <pre data-language="HTML"><code>
+  <span class="tag"><</span>!DOCTYPE html<span class="tag">></span>
+    <span class="tag"><</span>head<span class="tag">></span>
+      <span class="tag"><</span>meta <span class="atn">charset=</span><span class="atv">"utf-8"</span></span><span class="tag"> /></span>
+      <span class="tag"><</span>meta <span class="atn">name=</span><span class="atv">"viewport"</span> content=<span class="atv">"width=device-width, 
+      initial-scale=1.0"</span></span><span class="tag"> /></span>
+      <span class="tag"><</span>title<span class="tag">></span><span class="innerHtml">Site name</span><span class="tag"><</span>/title<span class="tag">></span>
+    <span class="tag"><</span>/head<span class="tag">></span>
+    <span class="tag"><</span>body<span class="tag">></span>
+      <span class="tag"><</span>p<span class="tag">></span><span class="innerHtml">Content goes here</span><span class="tag"><</span>/p<span class="tag">></span>
+    <span class="tag"><</span>/body<span class="tag">></span>
+  <span class="tag"><</span>/html<span class="tag">></span>
+                  </code></pre>
+                </div>
+                <div class="image">
+                  <img src="assets/tagbreakdown.png">
+                </div>
+                <div class="codeBlock">
+                  <pre data-language="HTML"><code>
+  <span><</span>h1<span>></span><span class="innerHtml">Grocery list</span><span><</span>/h1<span>></span>
+  <span><</span>ul>
+    <span><</span>li<span>></span><span class="innerHtml">Coffee</span><span><</span>/li<span>></span>
+    <span><</span>li<span>></span><span class="innerHtml">Bananas</span><span><</span>/li<span>></span>
+    <span><</span>li<span>></span><span class="innerHtml">Bread</span><span><</span>/li<span>></span>
+    <span><</span>li<span>></span><span class="innerHtml">Chips</span><span><</span>/li<span>></span>
+    <span><</span>li<span>></span><span class="innerHtml">Oreos</span><span><</span>/li<span>></span>
+  <span><</span>/ul<span>></span>
+                  </pre></code>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="day" id="two">
+             <div class="block">
+              <div class="blockHeader">
+                <h2>Images, tables, & forms</h2>
+                <h3>Ch. 5, 6, 7</h3>
+              </div>
+              <div class="blockContent">
+                <div class="col1">
+                  <span class="topic">Images</span>
+                  <ul class="notes">
+                    <li>Image tag always has <span class="codeLine">src=" "</span> attribute</li>
+                    <span><span class="codeLine">&lt;img src="image path here"&gt;</span></span>
+                    <span>Self-closing tag</span>
+                    <li>Best practice to store images in a folder within your project folder and use relative paths</li>
+                    <li><span class="codeLine">alt=" "</span> attribute provides alternative text that can be read by a screen reader for accessability purposes</li>
+                    <span><a href="http://www.ada.gov/websites2.htm" target="_blank">More on accessability and the web</a></span>
+                    <li><span class="codeLine">&lt;img&gt;</span> tag has attributes</li>
+                    <span><span class="codeLine">width=" "</span>, <span class="codeLine">height=" "</span>, and <span class="codeLine">align=" "</span></span>
+                    <span>Better practice to achieve these styles with CSS</span>
+                    <li>Images are inherently an inline element</li>
+                    <span>Most HTML elements are block elements, but some are inline (this will be expanded on later)</span>
+                    <li>Bitmap vs. vector (Photoshop vs. Illustrator)</li>
+                    <span>Vector is preferable for everything that's not a photograph</span>
+                    <span>Vector graphics are infinitely scalable without losing resolution or quality</span>
+                    <span>Bitmap images will lose resolution and quality each time they are scaled</span>
+                    <li>Image file types</li>
+                    <span>Use JPG for photographs</span>
+                    <span>Use PNG for vectors and bitmap images that have fewer colors (logos, icons) and anything containing transparency</span>
+                    <span>Use GIF for animations</span>
+                  </ul>
+                  <span class="topic">Tables</span>
+                  <ul class="notes">
+                    <li>Used for creating excel-like tables</li>
+                    <span>Everything gets wrapped in <span class="codeLine">&lt;table&gt;</span> tag</span>
+                    <span><span class="codeLine">&lt;tr&gt;</span> tags wrap rows</span>
+                    <span><span class="codeLine">&lt;th&gt;</span> and <span class="codeLine">&lt;td&gt;</span> wrap table cells</span>
+                    <span>Tables and cells can nest like other tags</span>
+                    <li>Not used much anymore except for email templates</li>
+                  </ul>
+                  <span class="topic">Forms</span>
+                  <ul class="notes">
+                    <li>Inputs that send data to a server</li>
+                      <span><span class="codeLine">&lt;input&gt;</span> tags with various attributes</span>
+                      <span><span class="codeLine">&lt;label&gt;</span> tags make labels dedicated to each input</span>
+                      <span><span class="codeLine">id=" "</span> attribute on <span class="codeLine">&lt;input&gt;</span> and <span class="codeLine">for=" "</span> attribute on <span class="codeLine">&lt;label&gt;</span> with same value links the two together</li>
+                    <li>Entire form gets wrapped in <span class="codeLine">&lt;form&gt;</span> tag</li>
+                      <span><span class="codeLine">&lt;form&gt;</span> tag needs <span class="codeLine">action=" "</span> and <span class="codeLine">method=" "</span> attributes to know where to send the data</span>
+                    <li><span class="codeLine">type=" "</span> attribute defines type of input (text, password, checkbox, radio button)</li>
+                    <li>Attributes like <span class="codeLine">name=" "</span> send additional data to server</li>
+                    <li><span class="codeLine">&lt;select&gt;</span> is used to create dropdown menus</li>
+                    <li><span class="codeLine">type="submit"</span> attribute creates submit button (clicking this sends filled-in data to server)</li>
+                    <li>Certain type attribute values (email, url) have validation services built into HTML5</li>
+                    <span>Verifies input content against a set of criteria, throws error if content doesn't meet criteria</span>
+                  </ul>
+                </div>
+                <div class="col2">
+                  <div class="image">
+                    <img src="assets/example-blockinline.png">
+                    <img src="assets/bitmap_vector.jpg">
+                  </div>
+                  <div class="codeBlock">
+                    <pre data-language="html"><code>
+  <span class="tag"><</span>label <span class="atn">for=</span><span class="atv">"firstName"</span><span class="tag">></span><span class="innerHtml">First Name:</span><span class="tag"><</span>/label>
+  <span class="tag"><</span>input <span class="atn">type=</span><span class="atv">"text"</span> <span class="atn">id=</span><span class="atv">"firstName"</span><span class="tag">></span>
+                    </pre></code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="day" id="three">
+            <div class="block">
+              <div class="blockHeader">
+                <h2>Extra markup</h2>
+                <h3>Ch. 8</h3>
+              </div>
+              <div class="blockContent">
+                <div class="col1">
+                  <span class="topic">Comments</span>
+                  <ul class="notes">
+                    <li><span class="codeLine">&lt;!-- Comment goes here --&gt;</span></li>
+                    <li>Unrendered line of code</li>
+                    <span>Every coding language has comments with different syntax to fit that language</span>
+                    <li>Important for documenting code</li>
+                    <span>Comments help explain what's going on in the code if someone were to look at it for the first time</span>  
+                  </ul>
+                  <span class="topic">Classes and IDs</span>
+                  <ul class="notes">
+                    <li>Give identifiers to tags that may be used many times</li>
+                    <li>IDs are unique names given to only one element in a HTML file</li>
+                    <li>Classes can be re-used and are often used to group similar elements</li>
+                    <li>Very important part of CSS (will be expanded on later)</li>
+                  </ul>
+                  <span class="topic">Divs and spans</span>
+                  <ul class="notes">
+                    <li>The <span class="codeLine">&lt;div&gt;</span> tag can be used as a wrapper around elements you want considered a group/block</li>
+                    <li>Divs can nest to create nesting blocks</li>
+                    <span>Divs are block elements</span>
+                    <li>Spans are also used as wrappers, but are inline elements</li>
+                    <li>Spans are typically used to wrap less content than divs</li>
+                    <span>Spans are often used as an inline version of <span class="codeLine">&lt;p&gt;</span> to put text on the page</span>
+                    <li>Divs and spans are both a large part of the "box model" concept (will be expanded on later)</li>
+                  </ul>
+                  <span class="topic">HTML5 Tags</span>
+                  <ul class="notes">
+                    <li><a href="http://www.w3schools.com/html/html5_new_elements.asp" target="_blank">Full list of new HTML5 tags here</a></li>
+                      <span>Not compatable with IE8 and older</span>
+                    <li>Aimed at creating better document structure across the web</li>
+                    <li>Commonly used tags are <span class="codeLine">&lt;header&gt;, &lt;nav&gt;, &lt;footer&gt;, &lt;article&gt;, &lt;aside&gt;,</span> and <span class="codeLine">&lt;section&gt;</span></li>
+                    <li><span class="codeLine">&lt;canvas&gt;</span> and <span class="codeLine">&lt;svg&gt;</span> utilize graphics capabilities of HTML5</li>
+                    <li>Positioning of these elements will be expanded on later in the CSS portion of the class</li>
+                  </ul>
+                  <span class="topic">Homework</span>
+                  <ul class="notes">
+                    <li>Bring a magazine or newspaper article into class</li>
+                  </ul>
+                </div>
+                <div class="col2">
+                  <div class="codeBlock">
+                    <pre data-language="HTML"><code>
+  <span><</span>div<span>></span>
+    <span><</span>h1<span>></span><span class="innerHtml">Grocery list</span><span><</span>/h1<span>></span>
+    <span><</span>ul <span class="atn">id=</span><span class="atv">"groceryList"</span>>
+      <span><</span>li <span class="atn">class=</span><span class="atv">"groceryItem"</span><span>></span><span class="innerHtml">Coffee</span><span><</span>/li<span>></span>
+      <span><</span>li <span class="atn">class=</span><span class="atv">"groceryItem"</span><span>></span><span class="innerHtml">Bananas</span><span><</span>/li<span>></span>
+      <span><</span>li <span class="atn">class=</span><span class="atv">"groceryItem"</span><span>></span><span class="innerHtml">Bread</span><span><</span>/li<span>></span>
+      <span><</span>li <span class="atn">class=</span><span class="atv">"groceryItem"</span><span>></span><span class="innerHtml">Chips</span><span><</span>/li<span>></span>
+      <span><</span>li <span class="atn">class=</span><span class="atv">"groceryItem"</span><span>></span><span class="innerHtml">Oreos</span><span><</span>/li<span>></span>
+    <span><</span>/ul<span>></span>
+  <span><</span>/div<span>></span>
+                    </pre></code>
+                  </div>
+                  <div class="image">
+                    <img src="assets/html5.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="day" id="four">
+             <div class="block">
+                <div class="blockHeader">
+                  <h2>Activity day</h2>
+                </div>
+                <div class="blockContent">
+                  <div class="col1">
+                    <span class="topic">Turning a newspaper article digital</span>
+                    <ul class="notes">
+                      <li>Today we will turn a magazine or newspaper article into HTML markup</li>
+                      <li><a href="http://w3schools.com" target="_blank">W3 Schools</a></li>
+                      <li>Using the Chrome inspector</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+            <div class="day" id="five">
+              <div class="block">
+                <div class="blockHeader">
+                  <h2>Intro to CSS</h2>
+                  <h3>Ch. 10, 11</h3>
+                </div>
+                <div class="blockContent">
+                  <div class="col1">
+                    <span class="topic">Writing CSS</span>
+                    <ul class="notes">
+                      <li>Two parts of every CSS rule: the selector and the declaration</li>
+                        <span>The selector is the name of the HTML element and is written first</span>
+                        <span>The declaration goes next, inside curly brackets <span class="codeLine">{ }</span></span>
+                      <li>The declaration is comprised of one or more definitions, which is a property followed by a value</li>
+                      <li>When defining the same style to multiple elements, the selector can have multiple element names separated by commas</li>
+                    </ul>
+                    <span class="topic">Cascading Style Sheets</span>
+                    <ul class="notes">
+                      <li>Rules are read from top to bottom and can overwrite each other</li>
+                      <li>Child elements inherit styles from their respective parent elements</li>
+                      <li>CSS rules <span class="bold">cannot</span> nest</li>
+                      <li>It is best practice to put <a href="http://meyerweb.com/eric/tools/css/reset/" target="_blank">style resets</a> at the top of your style sheet</li>
+                      <li>The right-hand column of a modern browsers' inspector is where the CSS is</li>
+                        <span>Has the ability to uncheck/recheck styles and write in new styles</span>
+                    </ul>
+                    <span class="topic">Attaching your style sheet to your HTML document</span>
+                    <ul class="notes">
+                      <li>Use the <span class="codeLine">&lt;link&gt;</span> tag to link the style sheet to the document</li>
+                      <li><span class="codeLine">&lt;link&gt;</span> needs three attributes to properly attach your style sheet:</li>
+                        <span>The <span class="codeLine">href=" "</span> attribute provides the relative path to the style sheet</span>
+                        <span>The <span class="codeLine">type="text/css"</span> and <span class="codeLine">rel="stylesheet"</span> attributes tell the rendering engine that this is a CSS style sheet</span>
+                      <li>Styles can also be written in <span class="codeLine">&lt;style&gt;&lt;/style&gt;</span> tags in the head of the document, but it's better practice to link an external stylesheet</li>
+                      <li>Styles can be written inline with the HTML, using the <span class="codeLine">style=" "</span> attribute on an element, but this method is used pretty rarely</li>
+                    </ul>
+                    <span class="topic">Colors</span>
+                    <ul class="notes">
+                      <li><span class="codeLine">color:  ;</span> defines type color, and <span class="codeLine">background-color:  ;</span> defines background color</li>
+                      <li>Color names</li>
+                        <span>147 predefined color names recognizable to browsers</span>
+                      <li>Hexadecimal codes</li>
+                        <span>Prefered method</span>
+                        <span><span class="codeLine">#</span> followed by 6 letter or number characters</span>
+                        <span>Hex values that are 6 of the same character can be written with <span class="codeLine">#</span> and three characters (<span class="codeLine">#000</span> is the same as to <span class="codeLine">#000000</span>)</span>
+                      <li>RBG values</li>
+                        <span><span class="codeLine">rgb(x, y, z)</span> where x represents amount of red, y represents about of green, and z represents amount of blue, and these variables are a value 0-255</span> 
+                        <span>CSS3 supports RBGA, where there is a fourth value 0-1 declaring opacity (with 0 being fully transparent and 1 being fully opaque)</span>
+                    </ul>
+                  </div>
+                  <div class="col2">
+                    <div class="codeBlock">
+                      <pre data-language="CSS"><code>
+  <span class="selector">p</span> {
+    <span class="property">color:</span> <span class="value">blue</span>;</span>
+  }
+                      </pre></code>
+                    </div>
+                    <div class="codeBlock">
+                      <pre data-language="HTML"><code>
+  <span class="tag"><</span>!DOCTYPE html<span class="tag">></span>
+    <span class="tag"><</span>head<span class="tag">></span>
+      <span class="tag"><</span>meta <span class="atn">charset=</span><span class="atv">"utf-8"</span></span><span class="tag"> /></span>
+      <span class="tag"><</span>meta <span class="atn">name=</span><span class="atv">"viewport"</span> content=<span class="atv">"width=device-width, 
+      initial-scale=1.0"</span></span><span class="tag"> /></span>
+      <span class="tag"><</span>title<span class="tag">></span><span class="innerHtml">Site name</span><span class="tag"><</span>/title<span class="tag">></span>
+      <span class="tag"><</span>link <span class="atn">href=</span><span class="atv">"css/stylesheet.css"</span> <span class="atn">type=</span><span class="atv">"text/css"</span> <span class="atn">
+      rel=</span><span class="atv">"stylesheet"</span><span class="tag">></span>
+    <span class="tag"><</span>/head<span class="tag">></span>
+    <span class="tag"><</span>body<span class="tag">></span>
+      <span class="tag"><</span>p<span class="tag">></span><span class="innerHtml">Content goes here</span><span class="tag"><</span>/p<span class="tag">></span>
+    <span class="tag"><</span>/body<span class="tag">></span>
+  <span class="tag"><</span>/html<span class="tag">></span>
+                  </code></pre>
+                    </div>
+                    <div class="image">
+                      <img src="assets/colorPicker.PNG">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="day" id="six">
+              <div class="block">
+                <div class="blockHeader">
+                  <h2>Type, lists, tables, and forms</h2>
+                  <h3>Ch. 12, 14</h3>
+                </div>
+                <div class="blockContent">
+                  <div class="col1">
+                    <span class="topic">Type lingo</span>
+                    <ul class="notes">
+                      <li>Serif fonts have outward lines and details at the end of each stroke, and are generally more traditional looking</li>
+                      <li>Sans serif fonts have straight ends to the strokes, and are generally more modern looking</li>
+                      <li>X-height is the height of the lowercase x</li>
+                      <li>The baseline is the line the letters sit on</li>
+                      <li>Cap height is the height of the capital letters</li>
+                      <li>Ascenders are the upward strokes than extend above the cap height</li>
+                      <li>Descenders are the downward strokes that descend below the baseline</li>
+                      <li>Kerning is the horizontal space between letters</li>
+                      <li>Leading is the vertical space between lines</li>
+                    </ul>
+                    <span class="topic">Type for the web</span>
+                    <ul class="notes">
+                      <li>General rule of thumb is to never include more than three fonts in any design, whether it's web or print</li>
+                        <span>Two fonts is usually sufficient; only use three if the design really needs it</span>
+                        <span>Generally, sans-serif and serif fonts pair well together</span>
+                        <span>Sans serif fonts for body copy are more readable on the web</span>
+                      <li><span class="codeLine">font-family: ;</span> definition</li>
+                        <span>Value is a list of fonts separated by commas and spaces</span>
+                        <span>When a font name is multiple words, put it in quotes</span>
+                        <span>First font is tried, and if it can't be loaded, the rendering engine goes down the list</span>
+                        <span>Always include a basic font toward the end, such as Arial or Times New Roman, followed by either the generic serif or sans-serif at the end</span>
+                      <li>Web fonts need to be used when you want a custom font that is not web-safe</li>
+                        <span><a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">Web safe font combinations</a></span>
+                        <span>Use <span class="codeLine">@font-face</span> declaration to load different files on the font into your website</span>
+                        <span>These font files would live in your project folder in a "fonts" folder, similarly to images</span>
+                        <span>Alternative to <span class="codeLine">@font-face</span> is <a href="https://www.google.com/fonts" target="_blank">Google Fonts</a></span>  
+                    </ul>
+                  </div>
+                  <div class="col2">
+                    <div class="image">
+                      <img src="assets/serif-sans.jpg">
+                      <img src="assets/Anatomy-of-Typography.png">
+                    </div>
+                    <div class="codeBlock">
+                      <pre><code>
+  <span class="selector">@font-face</span> {
+    <span class="property">font-family:</span> <span class="value">'myWebFont'</span>;
+    <span class="property">src:</span> <span class="value">url('myWebFont.eot')</span>;
+    <span class="property">src:</span> <span class="value">url('myWebFont.eot?#iefix') 
+    format('embedded-opentype'), 
+    url('myWebFont.woff') format('woff'), 
+    url('myWebFont.ttf') format('truetype'), 
+    url('myWebFont.svg#latobold') format('svg')</span>;
+    <span class="property">font-weight:</span> <span class="value">normal</span>;
+    <span class="property">font-style:</span> <span class="value">normal</span>;
+  }
+                      </pre></code>
+                    </div>
+                    <div class="codeBlock">
+                      <pre><code>
+  <span class="tag"><</span>!DOCTYPE html<span class="tag">></span>
+    <span class="tag"><</span>head<span class="tag">></span>
+      <span class="tag"><</span>meta <span class="atn">charset=</span><span class="atv">"utf-8"</span></span><span class="tag"> /></span>
+      <span class="tag"><</span>meta <span class="atn">name=</span><span class="atv">"viewport"</span> content=<span class="atv">"width=device-width, 
+      initial-scale=1.0"</span></span><span class="tag"> /></span>
+      <span class="tag"><</span>title<span class="tag">></span><span class="innerHtml">Site name</span><span class="tag"><</span>/title<span class="tag">></span>
+      <span class="tag"><</span>link <span class="atn">href=</span><span class="atv">"css/stylesheet.css"</span> <span class="atn">type=</span><span class="atv">"text/css"</span> <span class="atn">
+      rel=</span><span class="atv">"stylesheet"</span><span class="tag">></span>
+      <span class="tag"><</span>link <span class="atn">href=</span><span class="atv">'https://fonts.googleapis.com/css?
+      family=Open+Sans:400,600,700'</span>
+      <span class="atn">rel=</span><span class="atv">'stylesheet'</span> <span class="atn">type=</span><span class="atv">'text/css'</span><span class="tag">></span>
+    <span class="tag"><</span>/head<span class="tag">></span>
+    <span class="tag"><</span>body<span class="tag">></span>
+      <span class="tag"><</span>p<span class="tag">></span><span class="innerHtml">Content goes here</span><span class="tag"><</span>/p<span class="tag">></span>
+    <span class="tag"><</span>/body<span class="tag">></span>
+  <span class="tag"><</span>/html<span class="tag">></span>
+                  </code></pre>      
+                      </pre></code>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="day" id="seven">
+              <div class="block">
+                <div class="blockHeader">
+                  <h2>Type continued & more advanced CSS selectors</h2>
+                  <h3>Ch. 10 & 12</h3>
+                </div>
+                <div class="blockContent">
+                  <div class="col1">
+                    <span class="topic">Type cont.</span>
+                    <ul class="notes">
+                      <li>Three methods of type size units:</li>
+                        <span>Pixels (px) is the most basic method, similar to setting type size in Microsoft Word, and gives you most control over the size</span>
+                        <span>Percentages start as a fraction of the default browser type size (16px), and are always relative to the parent container's type size</span>
+                        <span>Ems are also relative, similar to percentages. 1em is equivalent to the width of a 16px "m" in the given type face</span>
+                      <li>CSS properties like <span class="codeLine">font-weight</span>, <span class="codeLine">font-style</span>, <span class="codeLine">text-transform</span>, and <span class="codeLine">text-decoration</span> format text</li>
+                      <li>CSS properties like <span class="codeLine">text-align</span> and <span class="codeLine">vertical-align</span> align text</li>
+                      <li>Styling links with psuedo-classes</li>
+                        <span>Attaching <span class="codeLine">:hover</span>, <span class="codeLine">:visited</span>, <span class="codeLine">:active</span>, and <span class="codeLine">:focus</span> to the end of the selector style different "states" of the link</span>
+                    </ul>  
+                    <span class="topic">CSS selectors with classes and IDs</span>
+                    <ul class="notes">
+                      <li>Classes and IDs can be their own selectors, or they can be attached to the HTML element name</li>
+                        <span><span class="codeLine">.</span> preceeds class names and <span class="codeLine">#</span> preceeds ID names when writing selectors</span>
+                        <span>When writing a class or ID in addition to the tag name, it would be written as <span class="codeLine">tag.className</span> or <span class="codeLine">tag#idName</span></span>
+                      <li>Since ID names are supposed to identify one element in the entire HTML document, it is less common that you would need to write the tag name in addition to the ID</li>
+                      <li>Since class names can be repeated throughout your markup and put on different element types, you do often need to write the tag name in addition to the class name to get more specific with your selectors</li>
+                      <li>When writing multiple class names of a single element as a selector, write them in succession with no spaces in between, i.e. <span class="codeLine">.className1.className2</span></li>
+                    </ul>
+                    <span class="topic">Advanced CSS selectors</span>
+                    <ul class="notes">
+                      <li>These are used for getting more specific with selectors</li>
+                      <li>See the full list of advanced selectors <a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">here</a></li>
+                        <span>These selectors use special characters between multiple element names</span>
+                        <span>Also for reference, p. 238 of the book has a more simplified list of these advanced selectors, containing the ones which are most commonly used</span>  
+                      <li>Psuedo classes are used for styling specific states or types of elements</li>
+                        <span>These go directly after the element name, with a <span class="codeLine">:</span> and the name of the psuedo class</span>
+                    </ul>
+                  </div>
+                  <div class="col2">
+                    <div class="image">
+                      <img src="assets/typeSize.gif">
+                    </div>
+                    <div class="codeBlock">
+                      <pre data-language="CSS"><code>
+  p<span class="selector">.heading</span> {
+    <span class="property">color:</span> <span class="value">blue</span>;</span>
+    <span class="property">font-size:</span> <span class="value">21px</span>;
+    <span class="property">font-weight:</span> <span class="value">bold</span>;
+  }
+                      </pre></code>
+                    </div>
+                    <div class="codeBlock">
+                      <pre data-language="CSS"><code>
+  p<span class="selector">.heading.first</span> {
+    <span class="property">color:</span> <span class="value">red</span>;</span>
+  }
+                      </pre></code>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="day" id="eight">
+              <div class="block">
+                <div class="blockHeader">
+                  <h2>The box model & layout</h2>
+                  <h3>Ch. 13 & 15</h3>
+                </div>
+                <div class="blockContent">
+                  <div class="col1">
+                    <p class="subHeader">The key to CSS: the box model</p>
+                    <span class="topic">Every HTML element has a box around it</span>
+                    <ul class="notes">
+                      <li>Margin is white space around the outside of the box</li>
+                      <li>Padding is white space between the edge of the content and the edge of the box</li>
+                        <span>Both margin and padding can be written in two ways: defining one side, or defining all 4 sides</span>
+                        <span><span class="codeLine">margin-top: 10px;</span> vs. <span class="codeLine">margin: 10px;</span></span>
+                      <li><span class="codeLine">width: ;</span> and <span class="codeLine">height: ;</span> properties can control size of the box</li>
+                        <span>Values of these properties can be a set px value or a percentage</span>
+                        <span><span class="codeLine">max-width: ;</span> is friendlier to responsive design, often accompanied by <span class="codeLine">width: 100%;</span></span>
+                        <span><span class="codeLine">min-width: ;</span> can set minimum width of the box</span>
+                      <li><span class="codeLine">overflow: ;</span> property can put a scroll bar in the box</li>
+                      <li>Elements can be centered within their container using <span class="codeLine">margin: 0 auto;</span></li>
+                      <li>Elements can be styled as a box</li>
+                        <span><span class="codeLine">border: ;</span> can style the box itself and needs 3 values: width, style, and color</span>
+                        <span><span class="codeLine">box-shadow: ;</span> can give a box a shadow, and needs several values</span>
+                        <span><span class="codeLine">border-radius: ;</span> rounds the corners of an element</span>
+                        <span><span class="codeLine">box-shadow</span> and <span class="codeLine">border-radius</span> need several <a href="http://webdesign.about.com/od/css/a/css-vendor-prefixes.htm" target="_blank">vendor prefixes</a> for optimal cross-browser compatability
+                    </ul>
+                    <span class="topic">Understanding the document flow</span>
+                    <ul class="notes">
+                      <li>The normal document flow is the natural arrangement of these boxes from top to bottom and left to right</li>
+                      <li>Elements can participate in this flow or be "taken out of" the normal flow and positioned alternatively</li>
+                      <li>Use the <span class="codeLine">display: ;</span> property to change default structure of an element</li>
+                        <span><span class="codeLine">display: block;</span> and <span class="codeLine">display: inline-block;</span> keep elements within the normal flow, but <span class="codeLine">inline-block</span> allows the next element to go directly next to the current element without breaking to the next line</span>
+                        <span><span class="codeLine">dispaly: inline;</span> takes elements out of the normal flow but keeps them in place</span>
+                        <span><span class="codeLine">display: none;</span> hides elements</span>
+                    </ul>
+                  </div>
+                  <div class="col2">
+                    <div class="image">
+                      <img src="assets/boxModel.gif">
+                      <img src="assets/boxShadow.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="day" id="nine">
+              <div class="block">
+                <div class="blockHeader">
+                  <h2>The box model continued & images </h2>
+                  <h3>Ch. 15 & 16</h3>
+                </div>
+                <div class="blockContent">
+                  <div class="col1">
+                    <span class="topic">Understanding the document flow cont.</span>
+                    <ul class="notes">
+                      <li>The <span class="codeLine">float</span> and <span class="codeLine">position</span> properties take elements out of the flow and position them elsewhere</li>
+                      <li><span class="codeLine">float</span> has three values: <span class="codeLine">left</span>, <span class="codeLine">right</span>, and <span class="codeLine">none</span></li> 
+                        <span><span class="codeLine">clear</span> is used when you want to float an element but you don't want any elements to float next to it and has three values: <span class="codeLine">left</span>, <span class="codeLine">right</span>, and <span class="codeLine">both</span></span>
+                      <li><span class="codeLine">position</span> is used when you want the element to always appear in the same spot, relative to a container or the document itself</li>
+                        <span><span class="codeLine">position: absolute;</span> positions an element within the closest positioned ancestor element (if there is no positioned ancestor, this property will position the element relative to the browser window)</span>
+                        <span><span class="codeLine">position: relative;</span> will position the element relative to itself</span>
+                        <span><span class="codeLine">position: fixed;</span> will position the element relative to the browser window</span>
+                        <span><span class="codeLine">position: static;</span> is the default</span>
+                      <li><span class="codeLine">z-index: ;</span> is used for overlapping elements and take a numeric value with no unit</li>
+                        <span>Higher number = higher layer</span>
+                        <span>Element needs a <span class="codeLine">position</span> definition in order for <span class="codeLine">z-index</span> to work</span>
+                    </ul>
+                    <span class="topic">Images</span>
+                      <ul class="notes">
+                        <li><span class="codeLine">width: ;</span> and <span class="codeLine">height: ;</span> properties can control the size of images</li>
+                        <li>When including images to accompany body copy text, images can be floated to the side of a text area or paragraph to achieve a desired layout/design</li>
+                        <li>When creating background images, there are three properties needed: <span class="codeLine">background-image, background-repeat,</span> and <span class="codeLine">background-position</span></li>
+                          <span><span class="codeLine">background-image</span> defines the path to the image with the <span class="codeLine">url(" ");</span> value</span>
+                          <span><span class="codeLine">background-repeat</span> determines if the image will repeat/tile or not; <span class="codeLine">repeat, repeat-x,</span> and <span class="codeLine">repeat-y</span> values are used for tiling the image, and <span class="codeLine">no-repeat</span> is used when the image should appear only once</span>
+                          <span><span class="codeLine">background-position</span> takes a top/bottom value and a left/right value to determine the position of the image, written as <span class="codeLine">top 10px left 10px</span>; when values are both 0, the value can be written as <span class="codeLine">0 0</span> without directional labels</span>
+                          <span>All three of these definitions can be written as a single <span class="codeLine">background</span> property</span>
+                        <li>With CSS3, the background-image property can be leveraged for creating <a href="https://css-tricks.com/css3-gradients/gradients" target="_blank">gradients</a></li>
+                      </ul>
+                  </div>
+                  <div class="col2">
+                    <div class="image">
+                      <img src="assets/float.jpg">
+                      <img src="assets/position.png">
+                    </div>
+                    <div class="codeBlock">
+                      <pre><code>
+  <span class="selector">.wrapper</span> {
+  <span class="property">  background:</span> <span class="value">url("assets/backgroundImage.jpg") 
+    no-repeat 0 0</span>;
+  }
+                      </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="day" id="ten">
+              <div class="block">
+                <div class="blockHeader">
+                  <h2>Grid structures & HTML5 layout</h2>
+                  <h3>Ch. 15 & 17</h3>
+                </div>
+                <div class="blockContent">
+                  <div class="col1">
+                    <span class="topic">Grids</span>
+                    <ul class="notes">
+                      <li>Grids help structure composition, create consistency, and create visually pleasing and balanced designs</li>
+                      <li>All grids are based off of a wrapper width</li>
+                        <span>Common widths are 960px, 990px, 1170px</span>
+                      <li>12-column grids are very common because they are divisible into sixths, quarters, thirds, and halves horizontally</li>
+                        <span><a href="http://960.gs/">960.gs</a></span>
+                        <span><a href="http://getbootstrap.com/2.3.2/index.html" target="_blank">Bootstrap</span>
+                      <li>Elements of a row are all floated left side-by-side with set widths and a consistent amount of margin on each side where appropriate</li>
+                      <li>Using these grids requires an understanding of their class name conventions</li>
+                        <span>Can be a down side, as grid class names are often descriptive of the page structure and not the content</span>
+                        <span>To combat this issue, it can be helpful to use the grid style sheet in addition to your own style sheet, so that you can use both the grid class names and also your own descriptive class names</span>
+                        <span>When using multiple style sheets, you can use <span class="codeLine">@import</span> in the single style sheet that's linked into the HTML, or you can link multiple style sheets into the HTML</span>
+                      <li>These grids are readily responsive and can help create a design that looks great on all devices</li>
+                      <li>While grids can be helpful and can speed up the workflow of a project, you should understand what the grids are doing and how you can achieve the same outcome with your own handwritten CSS</li>
+                    </ul>
+                    <span class="topic">HTML5 Layout</span>
+                    <ul class="notes">
+                      <li>Use the tags as descriptors for your content</li>
+                      <li>Arrange the content sections using common conventions of the web</li>
+                      <li>Use HTML5 tags in combination with a grid to achieve a highly structured design with strong markup</li>
+                      <li>Write a fallback rule in the CSS that tells older browsers what to do with these tags</li>
+                      <li>Use Google's HTML5 shiv javascript to make these tags work in browsers older than IE9</li>
+                    </ul>
+                  </div>
+                  <div class="col2">
+                    <div class="image">
+                      <a href="http://www.bootply.com/render/73778" target="_blank"><img src="assets/bootstrap.png"></a>
+                    </div>
+                    <div class="codeBlock">
+                      <pre><code>
+  <span class="property">@import</span> <span class="value">url("css/grid.css")</span>;
+                        
+  <span class="comment">
+  /* Styles begin here */
+
+  /*** Eric Meyer's Reset CSS v2.0
+  (http://meyerweb.com/eric/tools/css/reset/)
+  * http://cssreset.com */</span>
+  <span class="selector"> 
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,</span> ...
+   
+                      </code></pre>
+                    </div>
+                    <div class="codeBlock">
+                      <pre><code>
+  <span class="tag"><</span>head<span class="tag">></span>
+    <span class="tag"><</span>meta <span class="atn">charset=</span><span class="atv">"utf-8"</span></span><span class="tag"> /></span>
+    <span class="tag"><</span>meta <span class="atn">name=</span><span class="atv">"viewport"</span> content=<span class="atv">"width=device-width, 
+    initial-scale=1.0"</span></span><span class="tag"> /></span>
+    <span class="tag"><</span>title<span class="comment">></span><span class="innerHtml">Site name</span><span class="tag"><</span>/title<span class="tag">></span>
+
+    <span class="comment"><</span><span class="comment">!--[if lt IE 9]</span><span class="comment">></span>
+      <span class="comment"><</span><span class="comment">script</span> <span class="comment">src=</span><span class="comment">"http://html5shiv-printshiv.googlecode.
+      com/svn/trunk/html5shiv-printshiv.js"</span><span class="comment">></span><span class="comment"><</span><span class="comment">/script</span><span class="comment">></span>
+    <span class="comment"><</span><span class="comment">![endif]--</span><span class="comment">></span>
+  <span class="tag"><</span>/head<span class="tag">></span>
+                      </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="day" id="eleven">
+              <div class="block">
+                <div class="blockHeader">
+                  <h2>Process & design, practical info</h2>
+                  <h3>Ch. 18 & 19</h3>
+                </div>
+                <div class="blockContent">
+                  <div class="col1">
+                    <span class="topic">Websites are for users</span>
+                    <ul class="notes">
+                      <li>When making sites and/or site designs, have a user-centric mindset</li>
+                      <li>Identify who the target audience is</li>
+                        <span>Ask yourself questions about the end users' demographic, region, occupation, etc. to gain a better understanding of the user</span>
+                        <span>The tagret audience is not always individual people - it can also be companies or other entities</span>
+                      <li>What is the user trying to accomplish in visiting your site?</li>
+                        <span>Keep this in mind, and design & build the site to foster the accomplishment of these tasks and/or goals</span>
+                      <li>How frequently will the site be used, and how long will it live in the web?</li>
+                        <span>It is best practice to make updates to widely-used sites on a schedule instead of a case-by-case basis</span>
+                        <span>If the site is going to have a long lifespan, content will likely need to be updated periodically</span>
+                    </ul>
+                    <span class="topic">Designing the site structure</span>
+                    <ul class="notes">
+                      <li>Site maps help organize the pages of a site</li>
+                        <span>These are flow charts that organize pages of a site based on content</span>
+                        <span>When making decisions about the organization, keep the users' end goals in mind</span>
+                        <span>Determine what information needs to go on each page, and if it needs to appear on multiple pages</span>
+                      <li>Creating wireframes can help you sketch out the structure of information on each page</li>
+                      <li>Create a visual hierarchy that will lead the user to different visual elements in order of importance</li>
+                      <li>Group visual elements according to the six <a href="http://www.creativebloq.com/graphic-design/gestalt-theory-10134960" target="_blank">gestalt principles</a>: similarity, continuation, closure, proximity, figure/ground, and symmetry & order </li>
+                    </ul>
+                    <span class="topic">Practical info</span>
+                    <ul class="notes">
+                      <li>SEO (search engine optimization) helps your sites rank higher in search engines</li>
+                        <span>Search engines read your site code an content and look for keywords matching or relevant to the search term</span>
+                        <span>There are seven key areas of the page the browser looks for these keywords, listed in order of importance: the page title, the URL/web address, headings, text, link text, image alt text, and page descriptions (meta tags)</span>
+                        <span>Other sites linking to your site will also improve its search engine ranking</span>
+                      <li>Collecting analytics data can help you see how many visits and page views your site is getting, as well as some more specific data (unique visits, how long visitors are spending on each page)</li>
+                        <span><a href="http://www.google.com/analytics/ target="_blank"">Google Analytics</a></span>
+                      <li>Buying a domain</li>
+                        <span>First, <a href="http://www.checkdomain.com/ target="_blank"">check if the domain is available</a></span>
+                        <span>Next, buy the domain from a hosting company such as <a href="http://www.bluehost.com/ target="_blank"">Bluehost</a>, <a href="https://www.1and1.com/" target="_blank">1&1</a>, <a href="https://www.godaddy.com/ target="_blank"">GoDaddy</a></span>
+                      <li>Once you buy the domain, download an FTP client such as <a href="https://filezilla-project.org/" target="_blank">FileZilla</a></li>
+                        <span>Connect to the domain's server (there should be instructions provided) with the FTP program and upload your outer site folder</span>
+                    </ul>
+                  </div>
+                  <div class="col2">
+                    <div class="image">
+                      <img src="assets/site_map.jpg">
+                      <img src="assets/wireframe.png">
+                      <img src="assets/gestalt.jpeg">
+                      <img src="assets/filezilla.PNG">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="day" id="twelve">
+              <div class="block">
+                <div class="blockHeader">
+                  <h2>Advanced topics, technologies, & resources</h2>
+                </div>
+                <div class="blockContent">
+                  <div class="col1">
+                    <span class="topic">Designing responsively</span>
+                    <ul class="notes">
+                      <li>Responsive design is what makes web pages compatible on all screen sizes</li>
+                        <span>The three general screen sizes/devices to be aware of are desktop, tablet, and mobile</span>
+                      <li>Use media queries to change and add CSS rules at different break points</li>
+                        <span>Use <span class="codeLine">@media screen and ()</span> with a <span class="codeLine">min-width [value]</span> or <span class="codeLine">max-width [value]</span> property inside the parenthasis</span>
+                        <span>The media queries execute the contained code when the min-width or max-width is reached</span>
+                      <li>Generally, your default styles will be for desktop, and you will have media queries overwriting and adding styles for tablet and mobile</li>
+                        <span>For tablet queries, use <span class="codeLine">(max-width: 768px) { }</span></span>
+                        <span>For mobile queries, use <span class="codeLine">(max-width: 480px) { }</span></span>
+                        <span>For desktop queries, use <span class="codeLine">(min-width: 769px) { }</span></span> 
+                    </ul>
+                    <span class="topic">More advanced topics</span>
+                    <ul class="notes">
+                      <li>CSS preprocessors: <a href="http://sass-lang.com/" target="_blank">Sass</a> (syntactically awesome style sheets)</li>
+                        <span>Extends the functionality of the CSS language: allows for styles properties to nest, variables, mixins, and extends</span>
+                        <span>Requires configuring a compiler with Ruby or Node.js</span>
+                        <span>Styles are split into separate, organized files (partials) with the extention .scss, where the file name starts with _</span>
+                        <span>Partials are imported to a single .scss file that has no _ at the beginning of the file name</span>
+                        <span>This file is compiled into regular CSS in a separate file, and this file is the style sheet you link to your site</span>
+                      <li>JavaScript and jQuery</li>
+                        <span>The JavaScript language as a whole controls the interactivity of websites</span>
+                        <span>jQuery is a JavaScript library with its own properties, developed specifically for the purpose of manipulating the DOM tree (document object model)</span>
+                        <span>Creates the ability to easily move HTML elements, add/remove classes, create events on objects, add styles, and more</span>
+                    </ul>
+                    <span class="topic">Resources</span>
+                    <ul class="notes">
+                      <li>Design resources</li>
+                        <span><a href="https://dribbble.com/" target="_blank">Dribbble</a></span>
+                        <span><a href="https://www.behance.net/" target="_blank">Behance</a></span>
+                        <span><a href="http://usepanda.com/app/#/" target="_blank">Panda</a></span>
+                        <span><a href="http://sidebar.io/" target="_blank">Sidebar</a></span>
+                      <li>Coding class resources</li>
+                        <span><a href="https://teamtreehouse.com/" target="_blank">Treehouse</a></span>
+                        <span><a href="https://www.codeschool.com/" target="_blank">Code School</a></span>
+                        <span><a href="https://www.udemy.com/" target="_blank">Udemy</a></span>
+                        <span><a href="http://www.lynda.com/" target="_blank">Lynda</a></span>
+                    </ul>
+                  </div>
+                  <div class="col2">
+                    <div class="codeBlock">
+                      <pre><code>
+  <span class="property">@media screen and</span> <span class="value">(max-width: 768px)</span> {
+    <span class="selector">.blockWrapper .block</span> {
+      <span class="selector">.col1, .col2</span> {
+        <span class="property">float:</span> <span class="value">none</span>;
+        <span class="property">display:</span> <span class="value">block</span>;
+        <span class="property">width:</span> <span class="value">100%</span>;
+      }
+      <span class="selector">.col2</span> {
+        <span class="selector">.image img</span> {
+          <span class="property">margin-top:</span> <span class="value">15px</span> !important;
+          <span class="property">max-width:</span> <span class="value">auto</span> !important;
+          <span class="property">width:</span> <span class="value">auto</span> !important;
+        }
+        <span class="selector">.codeBlock</span> {
+          <span class="property">margin-top:</span> <span class="value">15px</span> !important;
+        }
+      }
+    }
+  }
+                      </code></pre>
+                    </div>
+                    <div class="image">
+                      <img src="assets/sass.svg">
+                      <img src="assets/jquery.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>© cleverbridge Inc. 2015</p>
+  </footer>
+  <script src="js/bundle.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

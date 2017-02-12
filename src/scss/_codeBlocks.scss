@@ -1,0 +1,26 @@
+.codeLine {
+	font-family: $code-font-family;
+}
+
+.codeBlock {
+	font-family: $code-font-family;
+	background: $black;
+	padding: 5px 0;
+	color: lighten($blue-light, 10);
+	border: 1px solid $gray-light;
+	.innerHtml, .selector {
+		color: $yellow;
+	}
+	.atn, .value {
+		color: $blue;
+	}
+	.atv, .property {
+		color: $red-light;
+	} 
+	.comment {
+		color: $gray-medium;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}

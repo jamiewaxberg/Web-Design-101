@@ -1,0 +1,133 @@
+
+////////////
+//Page styles
+////////////
+
+body {
+	width: 100%;
+	font-family: $base-font-family;
+	color: $base-font-color;
+	font-size: $base-font-size;
+	background: $base-bg-color;
+	height: 100%;
+}
+
+#wrapper {
+	max-width: 990px;
+	width: 100%;
+	margin: 25px auto 15px;
+	background: $wrapper-bg-color;
+	padding: $block-padding;
+	@include border-radius($base-border-radius*2);
+	border: 1px solid $gray-light;
+	@include box-shadow(0 0 10px 1px rgba(171,171,171,0.6));
+	.blockWrapper {
+		padding: $inner-block-padding;
+		border: 1px solid $gray-lighter;
+		@include border-radius($base-border-radius);
+	}
+}
+
+header {
+	text-align: center;
+	h1 {
+		margin-bottom: 20px;
+	}
+}
+
+//Nav tabs
+#nav {
+	li {
+		display: inline-block;
+		padding: 10px 10px 5px;
+		border: 1px solid $gray-lighter;
+		border-bottom: none;
+		@include border-radius (5px 5px 0 0);
+		background: $gray-lightest;
+		margin: 0 6px;
+		&.active {
+			background: $wrapper-bg-color;
+			border-bottom: 1px solid $white;
+    		position: relative;
+    		top: -5px;
+    		height: 54px;
+    		z-index: 100;
+		}
+		&:hover {
+    		position: relative;
+    		top: -5px;
+    		height: 54px;
+		}
+		a {
+			text-decoration: none;
+			color: $base-font-color;
+			font-weight: normal;
+			span {
+				display: block;
+				margin-top: 5px;
+				font-weight: 100;
+			}
+		}
+	} 
+} 
+
+.content {
+	position: relative;
+    top: -6px;
+    z-index: 5;
+}
+
+footer {
+	max-width: $max-width;
+	width: 100%; 
+	margin: 0 auto 10px;
+	p {
+		font-size: $mini-font-size;
+		text-align: center;
+		margin: 5px 0 0;
+	}
+}
+
+@media screen and(max-width: 941px) {
+	header {
+		height: 180px;
+	}
+	#nav {
+		li {
+			margin-bottom: 10px;
+			padding: 7px 10px;
+			@include border-radius(5px);
+			border-bottom: 1px solid $gray-lighter;
+			display: inline-block;
+    		vertical-align: middle;
+    		background: $gray-lightest;
+		    @include transition(background, 0.3s);
+		    -webkit-tap-highlight-color: rgba(0,0,0,0);
+			&:hover {
+				top: 0;
+				height: auto;
+				background: $white;
+			}
+			&.active {
+				top: 0;
+				height: auto;
+				border-bottom-color: $gray-lighter;
+			}
+		}
+	}
+} 
+
+@media screen and(max-width: 518px) {
+	header {
+		height: 240px;
+	}
+} 
+
+@media screen and(max-width: 375px) {
+	header {
+		height: 297px;
+		h1 {
+			white-space: nowrap;
+		}
+	}
+} 

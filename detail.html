@@ -1,0 +1,91 @@
+﻿<div ng-controller="detailCrtl">
+<div class="detail">   
+    <div class="outerWrapper">
+        <div class="container">
+            <div id="header">
+                <div class="cblogo">
+                    <img src="./images/cb-logo-color.png" alt="cleverbridge" />
+                </div>
+                <div class="pageHeadline">
+                    <h2>cleverbridge Tracking Code Documentation</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row breadcrumbs">
+            <div class="col-md-12">
+                <a href="#">Tracking Codes</a> / <a href="">{{trackinginfos[0].appellation}}</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4>{{trackinginfos[0].appellation}}</h4><br>
+                <b> Tracking Code Description </b>
+
+                <div ng-if="trackinginfos[0].description == null">
+                    <h5> This tracking code doesn't have a description yet. </h5>
+                </div>
+                <div ng-if="trackinginfos[0].description != null">
+                    <h5>{{trackinginfos[0].description}}</h5>
+                </div><br>
+
+    			<!--<p>When entering the values in the fileds below you will see a preview of the final code on the right hand side.<br />
+    			Also when moving the mouse over the parameter names below, you will get a short information what type to enter in the according fields.</p>-->
+    			<div class="additionalInfo">
+    				<div id="displayAdditional">
+    					<p>This tracking code will display on the following pages:</p>
+    					<p class="additionalvalue">checkout 
+    						<span ng-if="trackinginfos[0].show_pre_purchase == '1'"><b class="checkmark"></b></span>
+    						<span ng-if="trackinginfos[0].show_pre_purchase == '0'"><b class="x"></b></span>
+    					</p>
+    					<p class="additionalvalue">checkout.review 
+    						<span ng-if="trackinginfos[0].show_pre_purchase == '1'"><b class="checkmark"></b></span>
+    						<span ng-if="trackinginfos[0].show_pre_purchase == '0'"><b class="x"></b></span>
+    					</p>
+    					<p class="additionalvalue">confirmation 
+    						<span ng-if="trackinginfos[0].show_post_purchase == '1'"><b class="checkmark"></b></span>
+    						<span ng-if="trackinginfos[0].show_post_purchase == '0'"><b class="x"></b></span>
+    					</p>
+    				</div>
+    			</div><br>
+                <b>Customize Your Tracking Code</b>
+                <p class="blackText">Enter the required values and parameters in the fields below to see a preview of the final code.<br>
+                For more information about a specific parameter, hover your mouse over that parameter name.</p><br>
+    			<p><b class="subHead" title="Static values which can be set inside the CA">Parameters</b></p>
+                <p class="blackText">Parameters are static and need to be set up in the CA under "Third Party Tracking Tool > Parameters".</p>
+                <div class="widthfullsize">
+                    <div class="left40">
+                        <form name="userForm">
+                            <p class="field" ng-repeat="data in trackinginfos" ng-show="$index >= 1" ng-if="data.type=='s'">
+                                <label ng-mouseover="highlightFieldName(this)" ng-class="{showCursor: hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false" class="labels" for="{{::data.parameter_name}}" title="{{::data.input_type}}">
+                                    {{::data.parameter_name}}
+                                    <span ng-if="data.is_required == '1'">*</span>
+                                </label>
+                                <input type="text" id="{{::data.parameter_name}}" placeholder="{{data.default_value}}" ng-model="data.parameter_dingsda" ng-change="updateSourceCode('{{::data.parameter_name}}')" value="{{data.default_value}}" style="width:200px;" /><!--ng-model="data.parameter_name"-->
+                            </p>
+                        </form>
+                        <div id="dynamicdata">
+                            <p class="subHead" title="Purchase values like purchaseTotal">Dynamic Values</p> 
+							<p class="blackText">Dynamic values will be set automatically by the system.</p>
+						</div>
+                        <p class="field" ng-repeat="data in trackinginfos" ng-show="$index >= 1" ng-if="data.type=='d'">
+                            <label class="labels"  ng-class="{showCursor: hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false" for="{{::data.parameter_name}}"  title="{{::data.input_type}}">
+							{{::data.parameter_name}}
+							</label>
+                            <input type="text" id="{{::data.parameter_name}}" placeholder="{{data.default_value}}" readonly style="width:200px;" />
+                        </p>
+                    </div>
+                    <div class="left60">
+                        <!--<pre style="overflow:auto; width: 100%;">{{trackinginfos[0].sample_html}}</pre>-->
+						<div hljs language="" source="trackinginfos[0].sample_html"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerdiv">
+            <p class="footersize">© cleverbridge AG 2015</p>
+        </div>
+    </div>
+</div>    
+</div>

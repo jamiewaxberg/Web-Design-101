@@ -1,0 +1,117 @@
+<div ng-controller="checkCrtl">
+<div class="detail">   
+    <div class="outerWrapper">
+        <div class="container">
+            <div id="header">
+                <div class="cblogo">
+                    <img src="./images/cb-logo-color.png" alt="cleverbridge" />
+                </div>
+                <div class="pageHeadline">
+                    <h2>cleverbridge Tracking Code Documentation</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row breadcrumbs">
+            <div class="col-md-12">
+                <a href="#">Back to Trackings</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <h4>UNDER CONSTRUCTION</h4>
+                <p>Come back soon for more information. <br /> -->
+                <h4>Testing Process</h4>
+                
+		  <p>This document illustrate the steps that we need to follow in order to conduct a proper testing for a new implemented tracking code <br /></p>
+		  
+		  <div class="space40top">
+			<p><b title="Check if the tracking code is available">Check if the tracking code is available</b></p>
+		  </div>
+		  <div class="left60">
+                    <div style="position:relative;">
+                        <p>First of all, we need to check if the tracking code is available in our system or not. Use this tool in order to look up the code. <a href="https://trackingcodes.cleverbridge.com/">trackingcodes.cleverbridge.com</a></p>
+			   <img src="./images/tracking-documentation-overview.png" />
+		      </div>
+		  </div>
+                <div class="space40top">
+			<p><b title="Add a new tracking code in the CA">Add a new Tracking Code in the CA</b></p>
+		  </div>
+                <div class="left60">
+                    <div style="position:relative;">
+                        <p>Go to: Tools -> Add Third-Party Tracking Setup</p>
+			   <p><img src="./images/ca-menu-3rd-party-tracking.png" /></p>
+			   <p>Under "General":</p>
+			   <ul>
+				<li style="cursor:default;"><span>Look for the tracking code that you want to implement</span></li>
+			   </ul>
+			   <p><img src="./images/ca-menu-3rd-party-tracking-general.png" /></p>
+			   <p>Under "Parameter and Filter":</p>
+			   <ul>
+				<li style="cursor:default;">Make sure to select "triggers with parameter" and add a parameter name in order to test the code first. We will update it to be "trigger without parameter" once we make sure that everything works properly.</li>
+				<li style="cursor:default;">"Purchase status set" should be "All" for the testing step so it can trigger for test orders. After testing it, we will update it to the correct value.</li>
+			   </ul>
+			   <p><img src="./images/ca-menu-3rd-party-tracking-parameters-and-filter.png" /></p>
+			   <p>Under "Parameters":</p>
+			   <ul>
+				<li style="cursor:default;">Use the "cleverbridge Tracking Code Documentation" in order to view how the parameters are filled out in the actual code.</li>
+			   </ul>
+			   <p><img src="./images/ca-menu-3rd-party-tracking-parameters.png" /></p>
+			   <p><img src="./images/tracking-documentation-details.png" /></p>
+			   <p>Under "Sample HTML"</p>
+			   <p>You can view the code and the different static and dynamic parameters available.</p>
+			   <p><img src="./images/ca-menu-3rd-party-tracking-sample-html.png" /></p>
+                    </div>
+                </div>
+                <div class="space40top">
+                    <p><b title="Add a new tracking code in the CA">Test the tracking code in the browser</b></p>
+                </div>
+                 <div class="left60">
+                    <div style="position:relative;">
+                        <ol>
+				<li>Use the link Generator to create a test link and add "&tracking=xxxx" at the end of the URL to trigger the tracking code. Following the example:
+					<br /><br />
+					Client Id#677<br />
+					Tracking parameter: xxxx<br />
+					URL: https://www.cleverbridge.com/677/?scope=checkout&cart=130743&tracking=xxxx<br /><br />
+					<img src="./images/ca-link-gen-add-tracking-to-the-link.png" /><br />
+				</li>
+				<li>Check the page where the tracking code should trigger in the "cleverbridge Tracking Code Documentation"
+					<br /><br />
+					<img src="./images/tracking-documentation-details-short.png" />
+					<br />
+					For the example, it only fires in the confirmation page so we need to complete a purchase in order to test it.
+				</li>
+				<li>View the Source Code to verify that the tracking code is firing correctly.Following the exmple:
+					<br /><br />
+					<img src="./images/page-sourc-code-tracking-code.png" />
+				</li>
+				<li>Once it is tested in every scope, go back to the Parameter and Filter section fo the tracking code to update the trigger options accordingly.
+					<br /><br />
+					<img src="./images/ca-menu-3rd-party-tracking-parameters-and-filter-show-once.png" />
+				</li>
+			   </ol>
+                    </div>
+                </div>
+                <div class="left60">
+                    <p><b title="Test">Ready to Go</b></p>
+                </div>
+                 <div class="left60">
+                    <div style="position:relative;">
+                        <p>Now the setup is done and the tracking can be used.</p>
+                    </div>
+                </div>
+
+                <div class="right">
+                   <div class="left60"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footerdiv">
+            <p class="footersize">© cleverbridge AG 2015</p>
+        </div>
+    </div>
+</div>

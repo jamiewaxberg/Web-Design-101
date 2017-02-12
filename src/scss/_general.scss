@@ -1,0 +1,49 @@
+
+///////
+//Type
+///////
+
+//Importing icon font from CA server
+@font-face {
+  font-family: "cleverFont";
+  src: url('https://static.cleverbridge.com/mycontent/1/cleverFont.eot');
+  src: url('https://static.cleverbridge.com/mycontent/1/cleverFont.eot?#iefix') format('embedded-opentype'), url('https://static.cleverbridge.com/mycontent/1/cleverFont.woff') format('woff'), url('https://static.cleverbridge.com/mycontent/1/cleverFont.ttf') format('truetype'), url('https://static.cleverbridge.com/mycontent/1/cleverFont.svg#cleverFont') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+
+body {
+	font-family: $base-font-family;
+	color: $base-font-color;
+}
+
+h1 {
+	font-size: $h1-font-size;
+	font-weight: 600;
+	//font-family: $heading-font-family;
+}
+
+h2 {
+	font-size: $h2-font-size;
+	font-weight: 600;
+	//font-family: $heading-font-family;
+}
+
+h3 {
+	font-size: $h3-font-size;
+	font-weight: 100;
+	margin-top: 5px;
+}
+
+a {
+	color: $primary-color;
+	text-decoration: none;
+	font-weight: 600;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.bold {
+	font-weight: 600;
+}

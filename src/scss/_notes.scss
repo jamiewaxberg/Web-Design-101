@@ -1,0 +1,330 @@
+
+.blockWrapper {
+	.block {
+		display: inline-block;
+		width: 100%;
+		.blockHeader {
+			text-align: center;
+			margin: 10px 0 20px;
+		}
+		.col1 {
+			float: left;
+			width: 49%;
+			margin-right: 1%;
+			.subHeader {
+				font-size: $large-font-size;
+				line-height: $base-line-height * 1.5;
+				margin-bottom: 15px;
+				font-weight: 800;
+			}
+			.topic {
+				font-size: $medium-font-size;
+				display: block;
+				font-weight: 600;
+			}
+			ul.notes {
+				margin: 10px 0;
+				list-style: none;
+				li, li ~ span {
+					line-height: $base-line-height * 1.5;
+					&:before {
+						font-family: 'cleverFont';
+						font-size: $icon-font-size;
+						margin-right: 5px;
+						position: relative;
+	    				top: -2px;
+					}
+				}
+				li {
+					&:before {
+						content: '\e69c';
+					}
+					& ~ span {
+						display: block;
+	    				margin-left: 20px;
+	    				&:before {
+							content: '\e664';
+	    				}
+					}
+				}
+			}
+		}
+		.col2 {
+			float: left;
+			width: 50%;
+			.image {
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 768px) {
+	.blockWrapper .block {
+		.col1, .col2 {
+			float: none;
+			display: block;
+			width: 100%;
+		}
+		.col2 {
+			.image img {
+				margin-top: 15px !important;
+				max-width: auto !important;
+				width: auto !important;
+			}
+			.codeBlock {
+				margin-top: 15px !important;
+			}
+		}
+	}
+}
+
+/////////////////////
+//Day-specific tweaks
+/////////////////////
+
+#one {
+	.col2 {
+		.image {
+			margin: 100px 0 20px;
+			img {
+				max-width: 350px;
+				width: 100%;
+				height: auto;
+			}
+			&:first-child {
+				margin-top: 50px;
+			}
+		}
+		.codeBlock:last-child {
+			max-width: 250px;
+			width: 100%;
+			margin: 100px auto 0;
+		}
+	}
+}
+
+#two {
+	.col2 {
+		.image {
+			margin: 0 0 20px;
+			img:first-child {
+				max-width: 250px;
+				width: 100%;
+				height: auto;
+				margin-top: 100px;
+			}
+			img:nth-child(2) {
+				max-width: 450px;
+				width: 100%;
+				height: auto;
+				margin-top: 20px;
+			}
+			img:nth-child(3) {
+				max-width: 400px;
+				width: 100%;
+				height: auto;
+				margin-top: 150px;
+			}
+		}
+		.codeBlock {
+			width: 85%;
+    		margin: 170px auto 0;
+		}
+	}
+}
+
+#three {
+	.col2 {
+		.codeBlock {
+			max-width: 350px;
+			width: 100%;
+			padding: 5px 0;
+			margin: 180px auto 0;
+		}
+		.image {
+			margin: 75px 0 0;
+			img {
+				max-width: 450px;
+				width: 100%;
+			}
+		}
+	}
+}
+
+#four {
+	.col1 {
+		width: 100%;
+	}
+	.col2 {
+		width: 0;
+	}
+}
+
+#five {
+	.col2 {
+		.codeBlock {
+			&:first-child {
+				width: 32%;
+				margin: 150px auto 0;
+			}
+			&:nth-child(2) {
+				margin-top: 150px;
+    			width: 99%;
+    			margin-left: auto;
+			}
+		}
+		.image {
+			margin-top: 100px;
+			img {
+				max-width: 450px;
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
+
+#six {
+	.col2 {
+		.image {
+			img:first-child {
+				max-width: 250px;
+				width: 100%;
+				height: auto;
+			}
+			img:nth-child(2) {
+				max-width: 450px;
+				width: 100%;
+				height: auto;
+				margin: 25px 0;
+			}
+		}
+		.codeBlock:last-child {
+			margin-top: 35px;
+		}
+	}
+}
+
+#seven {
+	.col2 {
+		.image {
+			margin-top: 100px;
+			img {
+				max-width: 450px;
+				width: 100%;
+			}
+		}
+		.codeBlock {
+			width: 200px;
+			margin: 0 auto;
+			&:nth-child(2) {
+				margin-top: 175px;
+			}
+			&:last-child {
+				margin-top: 50px;
+			}
+		}
+	}
+}
+
+#eight {
+	.col2 {
+		.image {
+			margin: 0 auto;
+			img {
+				max-width: 450px;
+				width: 100%;
+				&:first-child {
+					margin-top: 50px;
+				}
+				&:nth-child(2) {
+					margin-top: 150px;
+				}	
+			}
+		}
+	}
+}
+
+#nine {
+	.col2 {
+		.image {
+			margin: 0 auto;
+			img {
+				max-width: 450px;
+				width: 100%;
+			}
+		}
+		.codeBlock {
+			max-width: 400px;
+			width: 100%;
+			margin: 175px auto 0;
+		}
+	}
+}
+
+#ten {
+	.col2 {
+		.image {
+			margin-top: 75px;
+			img {
+				max-width: 450px;
+				width: 100%;
+			}
+		}
+		.codeBlock {
+			&:nth-child(2) {
+				margin-top: 75px;
+			}
+			&:nth-child(3) {
+				margin-top: 50px;
+			}
+		}
+	}
+}
+
+#eleven {
+	.col2 {
+		.image {
+			img {
+				width: 100%;
+				&:first-child {
+					max-width: 325px;
+				}
+				&:nth-child(2) {
+					max-width: 300px;
+					margin-top: 50px;
+				}
+				&:nth-child(3) {
+					max-width: 450px;
+					margin-top: 50px;
+				}
+				&:nth-child(4) {
+					max-width: 450px;
+					margin-top: 50px;
+				}
+			}
+		}
+	}
+}
+
+#twelve {
+	.col2 {
+		.codeBlock {
+			margin-top: 80px;
+		}
+		.image {
+			img:first-child {
+				margin-top: 40px;
+				max-width: 250px;
+				width: 100%;
+				height: auto;
+			}
+			img:nth-child(2) {
+				max-width: 450px;
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
